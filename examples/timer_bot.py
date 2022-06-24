@@ -15,8 +15,8 @@ def send_welcome(message):
     bot.reply_to(message, "Hi! Use /set <seconds> to set a timer")
 
 
+# Send the beep message.
 def beep(chat_id) -> None:
-    """Send the beep message."""
     bot.send_message(chat_id, text='Beep!')
 
 
