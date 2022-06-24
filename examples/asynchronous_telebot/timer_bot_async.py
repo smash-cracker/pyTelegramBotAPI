@@ -12,8 +12,8 @@ API_TOKEN = '<api_token>'
 bot = AsyncTeleBot(API_TOKEN)
 
 
+# Send the beep message
 async def beep(chat_id) -> None:
-    """Send the beep message."""
     await bot.send_message(chat_id, text='Beep!')
     aioschedule.clear(chat_id)  # return schedule.CancelJob not working in aioschedule use tag for delete
 
